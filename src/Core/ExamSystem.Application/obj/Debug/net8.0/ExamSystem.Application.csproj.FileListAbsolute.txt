@@ -1,0 +1,6 @@
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.csproj.AssemblyReference.cache
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.AssemblyInfoInputs.cache
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.AssemblyInfo.cs
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.csproj.CoreCompileInputs.cache
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.sourcelink.json

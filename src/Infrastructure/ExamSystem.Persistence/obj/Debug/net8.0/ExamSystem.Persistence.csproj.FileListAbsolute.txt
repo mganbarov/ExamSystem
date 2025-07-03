@@ -1,0 +1,12 @@
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\bin\Debug\net8.0\ExamSystem.Persistence.deps.json
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\bin\Debug\net8.0\ExamSystem.Persistence.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\bin\Debug\net8.0\ExamSystem.Persistence.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.AssemblyInfoInputs.cache
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.AssemblyInfo.cs
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.csproj.CoreCompileInputs.cache
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.sourcelink.json
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\refint\ExamSystem.Persistence.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ref\ExamSystem.Persistence.dll

@@ -1,0 +1,12 @@
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\bin\Debug\net8.0\ExamSystem.Domain.deps.json
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\bin\Debug\net8.0\ExamSystem.Domain.dll
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\bin\Debug\net8.0\ExamSystem.Domain.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.AssemblyInfoInputs.cache
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.AssemblyInfo.cs
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.csproj.CoreCompileInputs.cache
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.sourcelink.json
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.dll
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\refint\ExamSystem.Domain.dll
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ref\ExamSystem.Domain.dll
