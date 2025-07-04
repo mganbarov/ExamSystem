@@ -40,10 +40,13 @@ builder.Services.AddSwaggerGen(opt =>
                 });
 });
 
-//builder.Services.AddCors(p => p.AddPolicy("corspolicy", build => //Angular app'in localhostun qoshmaq lazimdir
-//{
-//    build.WithOrigins();
-//}));
+builder.Services.AddCors(p => p.AddPolicy("corspolicy", policy => 
+{
+    policy.WithOrigins("http://localhost:4200")
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowCredentials();
+}));
 
 
 builder.Services.AddControllers();
@@ -91,7 +94,7 @@ using(var scope = app.Services.CreateScope())
     intializer.IntializeDbContext().Wait();
 }
 
-//app.UseCors("corspolicy");
+app.UseCors("corspolicy");
 
 app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 

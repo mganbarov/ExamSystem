@@ -1,0 +1,16 @@
+<div class="layout">
+    <aside class="sidebar">
+        <h3>Menu</h3>
+        <nav>
+            <ul>
+                <li><a routerLink="/dashboard/lessons" routerLinkActive="active">Dərslər</a></li>
+                <li><a routerLink="/dashboard/students" routerLinkActive="active">Şagirdlər</a></li>
+                <li><a routerLink="/dashboard/exams" routerLinkActive="active">İmtahanlar</a></li>
+                <li><a (click)="logout()">Çıxış</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="content">
+        <router-outlet></router-outlet>
+    </main>
+</div>

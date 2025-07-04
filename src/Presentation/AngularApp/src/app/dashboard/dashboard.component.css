@@ -1,0 +1,15 @@
+.dashboard {
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.dashboard h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.dashboard p {
+  font-size: 18px;
+  line-height: 1.5;
+}
