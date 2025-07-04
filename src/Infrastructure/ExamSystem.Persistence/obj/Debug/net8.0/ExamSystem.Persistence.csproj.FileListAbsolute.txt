@@ -10,3 +10,11 @@ D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\ob
 D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\refint\ExamSystem.Persistence.dll
 D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.pdb
 D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ref\ExamSystem.Persistence.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.csproj.AssemblyReference.cache
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\bin\Debug\net8.0\ExamSystem.Persistence.runtimeconfig.json
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\bin\Debug\net8.0\ExamSystem.Application.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\bin\Debug\net8.0\ExamSystem.Domain.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\bin\Debug\net8.0\ExamSystem.Application.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\bin\Debug\net8.0\ExamSystem.Domain.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSyst.A0AE57C3.Up2Date
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Persistence\obj\Debug\net8.0\ExamSystem.Persistence.genruntimeconfig.cache

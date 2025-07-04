@@ -1,4 +1,5 @@
-﻿using ExamSystem.Application.DTOs.Exam;
+﻿using ExamSystem.Application.Abstraction.Repositories;
+using ExamSystem.Application.DTOs.Exam;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -12,21 +13,25 @@ namespace ExamSystem.Application.Validators.Exam
     {
         public CreateExamValidator()
         {
-            RuleFor(x => x.LessonId)
-            .NotEmpty()
-            .Must(x => x > 0).WithMessage("Id 0-dan böyük olmalıdır!");
-
-
-            RuleFor(x => x.StudentId)
+            RuleFor(x => x.StudentNumber)
                 .NotEmpty()
-                .Must(x=>x > 0).WithMessage("Id 0-dan böyük olmalıdır!"); 
+                .WithMessage("Şagird nömrəsi boş ola bilməz");
 
+            RuleFor(x => x.LessonCode)
+                .NotEmpty()
+                .WithMessage("Dərs kodu boş ola bilməz");
+                
             RuleFor(x => x.ExamDate)
                 .NotEmpty()
-                .LessThanOrEqualTo(DateTime.Today);
+                .WithMessage("İmtahan tarixi boş ola bilməz")
+                .LessThanOrEqualTo(DateTime.Today)
+                .WithMessage("İmtahan tarixi gələcəkdə ola bilməz");
 
             RuleFor(x => x.ExamScore)
-                .InclusiveBetween(0, 5); 
+                .InclusiveBetween(0, 9)
+                .WithMessage("Qiymət 0-9 aralığında olmalıdır");
+
         }
+
     }
 }

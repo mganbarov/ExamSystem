@@ -6,6 +6,6 @@
     string Name,
     int Grade,
     string TeacherFirstName,
-    string TeacherLastName);
+    string TeacherSurname);
     
 }

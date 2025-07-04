@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using ExamSystem.Application.Abstraction.Repositories;
+using FluentValidation;
 
 namespace ExamSystem.Application.Validators.Student
 {
@@ -7,18 +8,25 @@ namespace ExamSystem.Application.Validators.Student
         public CreateStudentValidator()
         {
             RuleFor(x => x.OrderNumber)
-           .InclusiveBetween(1, 99999); // number(5,0)
+                .InclusiveBetween(1, 99999)
+                .WithMessage("Şagird nömrəsi 1-99999 aralığında olmalıdır");
 
             RuleFor(x => x.FirstName)
                 .NotEmpty()
-                .MaximumLength(30);
+                .WithMessage("Şagirdin adı boş ola bilməz")
+                .MaximumLength(30)
+                .WithMessage("Şagirdin adı 30 simvoldan çox ola bilməz");
 
             RuleFor(x => x.Surname)
                 .NotEmpty()
-                .MaximumLength(30);
+                .WithMessage("Şagirdin soyadı boş ola bilməz")
+                .MaximumLength(30)
+                .WithMessage("Şagirdin soyadı 30 simvoldan çox ola bilməz");
 
             RuleFor(x => x.Grade)
-                .InclusiveBetween(1, 11);
+                .InclusiveBetween(1, 11)
+                .WithMessage("Sinif 1-11 aralığında olmalıdır");
         }
+        
     }
 }

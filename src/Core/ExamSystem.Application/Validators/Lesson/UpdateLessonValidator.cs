@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using ExamSystem.Application.Abstraction.Repositories;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,28 +12,35 @@ namespace ExamSystem.Application.Validators.Lesson
     {
         public UpdateLessonValidator()
         {
-            RuleFor(x => x.Id)
-             .NotEmpty()
-             .Must(x => x > 0).WithMessage("Id 0-dan böyük olmalıdır!");
-
             RuleFor(x => x.Code)
-                .NotEmpty()
-                .Length(3);
-
+            .NotEmpty()
+            .WithMessage("Dərs kodu boş ola bilməz")
+            .Length(3)
+            .WithMessage("Dərs kodu 3 simvoldan ibarət olmalıdır");
+            
             RuleFor(x => x.Name)
                 .NotEmpty()
-                .MaximumLength(30);
+                .WithMessage("Dərs adı boş ola bilməz")
+                .MaximumLength(30)
+                .WithMessage("Dərs adı 30 simvoldan çox ola bilməz");
 
             RuleFor(x => x.Grade)
-                .InclusiveBetween(1, 11);
+                .InclusiveBetween(1, 12)
+                .WithMessage("Sinif 1-12 aralığında olmalıdır");
 
             RuleFor(x => x.TeacherFirstName)
                 .NotEmpty()
-                .MaximumLength(20);
+                .WithMessage("Müəllimin adı boş ola bilməz")
+                .MaximumLength(20)
+                .WithMessage("Müəllimin adı 20 simvoldan çox ola bilməz");
 
-            RuleFor(x => x.TeacherLastName)
+            RuleFor(x => x.TeacherSurname)
                 .NotEmpty()
-                .MaximumLength(20);
+                .WithMessage("Müəllimin soyadı boş ola bilməz")
+                .MaximumLength(20)
+                .WithMessage("Müəllimin soyadı 20 simvoldan çox ola bilməz");
         }
+
+       
     }
 }

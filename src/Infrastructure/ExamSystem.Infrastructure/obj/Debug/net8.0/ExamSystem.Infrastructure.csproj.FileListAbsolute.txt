@@ -10,3 +10,9 @@ D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure
 D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\obj\Debug\net8.0\refint\ExamSystem.Infrastructure.dll
 D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\obj\Debug\net8.0\ExamSystem.Infrastructure.pdb
 D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\obj\Debug\net8.0\ref\ExamSystem.Infrastructure.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\bin\Debug\net8.0\ExamSystem.Application.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\bin\Debug\net8.0\ExamSystem.Domain.dll
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\bin\Debug\net8.0\ExamSystem.Application.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\bin\Debug\net8.0\ExamSystem.Domain.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\obj\Debug\net8.0\ExamSystem.Infrastructure.csproj.AssemblyReference.cache
+D:\projects\Pet-Projects\ExamSystem\src\Infrastructure\ExamSystem.Infrastructure\obj\Debug\net8.0\ExamSyst.5525EC4A.Up2Date

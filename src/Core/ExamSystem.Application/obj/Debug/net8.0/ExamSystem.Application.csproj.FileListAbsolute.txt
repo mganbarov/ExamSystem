@@ -4,3 +4,13 @@ D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\ne
 D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.AssemblyInfo.cs
 D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.csproj.CoreCompileInputs.cache
 D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.sourcelink.json
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\bin\Debug\net8.0\ExamSystem.Application.deps.json
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\bin\Debug\net8.0\ExamSystem.Application.dll
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\bin\Debug\net8.0\ExamSystem.Application.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\bin\Debug\net8.0\ExamSystem.Domain.dll
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\bin\Debug\net8.0\ExamSystem.Domain.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSyst.09C38276.Up2Date
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.dll
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\refint\ExamSystem.Application.dll
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ExamSystem.Application.pdb
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Application\obj\Debug\net8.0\ref\ExamSystem.Application.dll

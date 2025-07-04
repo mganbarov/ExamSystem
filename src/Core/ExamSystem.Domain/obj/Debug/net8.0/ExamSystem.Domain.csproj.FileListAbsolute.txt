@@ -10,3 +10,4 @@ D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\
 D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\refint\ExamSystem.Domain.dll
 D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.pdb
 D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ref\ExamSystem.Domain.dll
+D:\projects\Pet-Projects\ExamSystem\src\Core\ExamSystem.Domain\obj\Debug\net8.0\ExamSystem.Domain.csproj.AssemblyReference.cache

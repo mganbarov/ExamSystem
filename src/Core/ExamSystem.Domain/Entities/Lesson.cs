@@ -7,7 +7,7 @@ namespace ExamSystem.Domain
         public string Name { get; set; }
         public int Grade { get; set; }
         public string TeacherFirstName { get; set; }
-        public string TeacherLastName { get; set; }
+        public string TeacherSurname { get; set; }
         //Relations
         public ICollection<Exam> Exams { get; set; } = new List<Exam>();
     }

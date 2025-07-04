@@ -3,8 +3,8 @@ using ExamSystem.Domain;
 
 namespace ExamSystem.Application.Abstraction.Repositories
 {
-    internal interface IExamRepository : IRepository<Exam>
+    public interface IExamRepository : IRepository<Exam>
     {
-
+        Task<Exam?> GetByStudentAndLessonAsync(int studentId, int lessonId);
     }
 }

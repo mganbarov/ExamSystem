@@ -12,6 +12,12 @@ namespace ExamSystem.Application.Routes
         public const string Version = "v1";
         public const string Base = Root + "/" + Version;
 
+
+        public struct Auth
+        {
+            public const string Login = "auth/login";
+        }
+
         public struct Student
         {
             public const string Create = "students";
