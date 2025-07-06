@@ -25,6 +25,7 @@
               }
             ],
             "styles": [
+              "devextreme/dist/css/dx.light.css",
               "@angular/material/prebuilt-themes/magenta-violet.css",
               "src/styles.css"
             ]

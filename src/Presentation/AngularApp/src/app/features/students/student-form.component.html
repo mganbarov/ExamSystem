@@ -1,0 +1,53 @@
+<h2 mat-dialog-title>{{ student.id ? 'Şagirdi redaktə et' : 'Yeni şagird əlavə et' }}</h2>
+
+<div mat-dialog-content>
+
+  <div *ngIf="student.validationErrors?.['FirstName']">
+    <div *ngFor="let error of student.validationErrors?.['FirstName']" class="field-validation">
+      {{error}}
+    </div>
+  </div>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Adı</mat-label>
+    <input matInput [(ngModel)]="student.firstName" />
+  </mat-form-field>
+
+  <div *ngIf="student.validationErrors?.['Surname']">
+    <div *ngFor="let error of student.validationErrors?.['Surname']" class="field-validation">
+      {{error}}
+    </div>
+  </div>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Soyadı</mat-label>
+    <input matInput [(ngModel)]="student.surname" />
+  </mat-form-field>
+
+  <div *ngIf="student.validationErrors?.['Grade']">
+    <div *ngFor="let error of student.validationErrors?.['Grade']" class="field-validation">
+      {{error}}
+    </div>
+  </div>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Sinf</mat-label>
+    <input matInput type="number" [(ngModel)]="student.grade" />
+  </mat-form-field>
+
+  <div *ngIf="student.validationErrors?.['OrderNumber']">
+    <div *ngFor="let error of student.validationErrors?.['OrderNumber']" class="field-validation">
+      {{error}}
+    </div>
+  </div>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Nömrə</mat-label>
+    <input matInput type="number" [(ngModel)]="student.orderNumber" />
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="cancel()">İmtina</button>
+  <button mat-flat-button color="primary" (click)="save()">Yadda saxla</button>
+</div>

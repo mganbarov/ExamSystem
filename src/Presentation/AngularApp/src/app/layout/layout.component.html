@@ -1,16 +1,21 @@
-<div class="layout">
-    <aside class="sidebar">
-        <h3>Menu</h3>
-        <nav>
-            <ul>
-                <li><a routerLink="/dashboard/lessons" routerLinkActive="active">Dərslər</a></li>
-                <li><a routerLink="/dashboard/students" routerLinkActive="active">Şagirdlər</a></li>
-                <li><a routerLink="/dashboard/exams" routerLinkActive="active">İmtahanlar</a></li>
-                <li><a (click)="logout()">Çıxış</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <main class="content">
-        <router-outlet></router-outlet>
-    </main>
-</div>
+<mat-sidenav-container class="main-container">
+  <mat-sidenav #sidenav mode="side" opened>
+    <h2 class="menu-title">Menu</h2>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard/lessons">Dərslər</a>
+      <a mat-list-item routerLink="/dashboard/students">Şagirdlər</a>
+      <a mat-list-item routerLink="/dashboard/exams">İmtahanlar</a>
+      <a mat-list-item routerLink="/login">Çıxış</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <span>İmtahan Sistemi</span>
+    </mat-toolbar>
+    
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

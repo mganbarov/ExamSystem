@@ -446,19 +446,19 @@
       "CreateExamDTO": {
         "type": "object",
         "properties": {
-          "examDate": {
+          "ExamDate": {
             "type": "string",
             "format": "date-time"
           },
-          "examScore": {
+          "ExamScore": {
             "type": "integer",
             "format": "int32"
           },
-          "studentNumber": {
+          "StudentNumber": {
             "type": "integer",
             "format": "int32"
           },
-          "lessonCode": {
+          "LessonCode": {
             "type": "string",
             "nullable": true
           }
@@ -494,19 +494,19 @@
       "CreateStudentDto": {
         "type": "object",
         "properties": {
-          "firstName": {
+          "FirstName": {
             "type": "string",
             "nullable": true
           },
-          "surname": {
+          "Surname": {
             "type": "string",
             "nullable": true
           },
-          "grade": {
+          "Grade": {
             "type": "integer",
             "format": "int32"
           },
-          "orderNumber": {
+          "OrderNumber": {
             "type": "integer",
             "format": "int32"
           }
@@ -516,11 +516,11 @@
       "LoginRequestDto": {
         "type": "object",
         "properties": {
-          "username": {
+          "Username": {
             "type": "string",
             "nullable": true
           },
-          "password": {
+          "Password": {
             "type": "string",
             "nullable": true
           }
@@ -530,23 +530,23 @@
       "UpdateExamDTO": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "examDate": {
+          "ExamDate": {
             "type": "string",
             "format": "date-time"
           },
-          "examScore": {
+          "ExamScore": {
             "type": "integer",
             "format": "int32"
           },
-          "studentNumber": {
+          "StudentNumber": {
             "type": "integer",
             "format": "int32"
           },
-          "lessonCode": {
+          "LessonCode": {
             "type": "string",
             "nullable": true
           }
@@ -556,27 +556,27 @@
       "UpdateLessonDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "code": {
+          "Code": {
             "type": "string",
             "nullable": true
           },
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "grade": {
+          "Grade": {
             "type": "integer",
             "format": "int32"
           },
-          "teacherFirstName": {
+          "TeacherFirstName": {
             "type": "string",
             "nullable": true
           },
-          "teacherSurname": {
+          "TeacherSurname": {
             "type": "string",
             "nullable": true
           }
@@ -586,23 +586,23 @@
       "UpdateStudentDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "integer",
             "format": "int32"
           },
-          "firstName": {
+          "FirstName": {
             "type": "string",
             "nullable": true
           },
-          "surname": {
+          "Surname": {
             "type": "string",
             "nullable": true
           },
-          "orderNumber": {
+          "OrderNumber": {
             "type": "integer",
             "format": "int32"
           },
-          "grade": {
+          "Grade": {
             "type": "integer",
             "format": "int32"
           }

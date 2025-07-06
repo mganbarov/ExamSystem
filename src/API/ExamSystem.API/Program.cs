@@ -5,11 +5,17 @@ using ExamSystem.Infrastructure.Configurations;
 using ExamSystem.Persistence;
 using ExamSystem.Persistence.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Globalization;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var cultureInfo = new CultureInfo("az");
+CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opt =>
@@ -40,16 +46,22 @@ builder.Services.AddSwaggerGen(opt =>
                 });
 });
 
-builder.Services.AddCors(p => p.AddPolicy("corspolicy", policy => 
+builder.Services.AddCors(p => p.AddPolicy("corspolicy", policy =>
 {
-    policy.WithOrigins("http://localhost:4200")
+    policy.WithOrigins("http://localhost:4200", "http://localhost:64976")
     .AllowAnyHeader()
     .AllowAnyMethod()
     .AllowCredentials();
 }));
 
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    });
+
+
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.RegisterApplicationDependencies();
@@ -80,7 +92,6 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// Middleware pipeline
 
 if (app.Environment.IsDevelopment())
 {
@@ -100,7 +111,7 @@ app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 
 app.UseHttpsRedirection();
 
-// Аутентификация должна идти перед авторизацией!
+
 app.UseAuthentication();
 app.UseAuthorization();
 

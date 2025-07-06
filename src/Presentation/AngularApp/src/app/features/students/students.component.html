@@ -1,27 +1,35 @@
-
 <div class="table-container">
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z2">
+  <div class="toolbar">
+  <button class="add-button" (click)="createStudent()">Əlavə et</button>
+</div>
 
-    <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef> ID </th>
-      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-    </ng-container>
 
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-    </ng-container>
+<dx-data-grid
+  [dataSource]="students"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [rowAlternationEnabled]="false">
 
-    <ng-container matColumnDef="actions">
-      <th mat-header-cell *matHeaderCellDef> Actions </th>
-      <td mat-cell *matCellDef="let element">
-        <button mat-button color="primary">Edit</button>
-        <button mat-button color="warn">Delete</button>
-      </td>
-    </ng-container>
+  <dxo-paging [pageSize]="5"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
-  <button mat-raised-button color="accent" class="add-button">+ Add</button>
+  <dxi-column dataField="firstName" caption="Ad"></dxi-column>
+  <dxi-column dataField="surname" caption="Soyad"></dxi-column>
+  <dxi-column dataField="grade" caption="Sinif"></dxi-column>
+  <dxi-column dataField="orderNumber" caption="Nömrə"></dxi-column>
+   <dxi-column type="buttons" caption="Əməliyyatlar">
+    <dxi-button
+      icon="edit"
+      hint="Redaktə et"
+      [onClick]="handleEditButtonClick">
+    </dxi-button>
+    <dxi-button
+      icon="trash"
+      hint="Sil"
+      [onClick]="handleDeleteButtonClick">
+    </dxi-button>
+  </dxi-column>
+  
+</dx-data-grid>
+
 </div>

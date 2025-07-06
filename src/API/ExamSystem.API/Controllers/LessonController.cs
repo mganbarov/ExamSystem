@@ -26,7 +26,7 @@ namespace ExamSystem.API.Controllers
 
         [HttpPost(ApiRoutes.Lesson.Create)]
         [Authorize]
-        public async Task<IActionResult> Create(CreateLessonDto dto)
+        public async Task<IActionResult> Create([FromBody]CreateLessonDto dto)
         {
             await _lessonService.CreateAsync(dto);
             return StatusCode(StatusCodes.Status201Created);

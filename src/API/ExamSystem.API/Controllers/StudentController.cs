@@ -37,8 +37,8 @@ namespace ExamSystem.API.Controllers
         [Authorize]
         public async Task<IActionResult> Update(UpdateStudentDto dto)
         {
-            await _studentService.UpdateAsync(dto);
-            return StatusCode(StatusCodes.Status204NoContent);
+            var response = await _studentService.UpdateAsync(dto);
+            return Ok(response);
         }
 
         [HttpDelete(ApiRoutes.Student.Delete)]

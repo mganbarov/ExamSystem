@@ -1,0 +1,200 @@
+/* :host {
+  display: block;
+  padding: 24px;
+  background-color: #ffffff; 
+  color: #212121;            
+  border-radius: 12px;
+  max-height: 90vh;
+  width: 100%;
+  max-width: 600px;
+  min-width: 450px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+
+::ng-deep .mat-mdc-dialog-surface {
+  background: #ffffff !important;
+  color: #212121 !important;
+  padding: 24px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+::ng-deep .mat-mdc-form-field-infill {
+  background-color: #f5f5f5 !important;
+  border-radius: 4px;
+}
+
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+::ng-deep .mat-button,
+::ng-deep .mat-flat-button {
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+
+::ng-deep .mat-mdc-input-element {
+  color: #000 !important;
+}
+
+
+::ng-deep .mdc-floating-label {
+  color: #000 !important;
+}
+
+
+::ng-deep input::placeholder {
+  color: #777 !important;
+  opacity: 1 !important;
+}
+
+.field-error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-left: 4px;
+} */
+
+:host {
+  display: block;
+  padding: 24px;
+  background-color: #ffffff;
+  color: #212121;
+  border-radius: 12px;
+  max-height: 90vh;
+  width: 100%;
+  max-width: 600px;
+  min-width: 450px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Диалог */
+::ng-deep .mat-mdc-dialog-surface {
+  background: #ffffff !important;
+  color: #212121 !important;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок */
+::ng-deep .mat-mdc-dialog-title,
+::ng-deep h2[mat-dialog-title] {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121 !important;
+  margin-bottom: 16px;
+}
+
+/* Поля формы */
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+::ng-deep .mat-mdc-form-field-infill {
+  background-color: #f5f5f5 !important;
+  border-radius: 6px !important;
+}
+
+::ng-deep .mat-mdc-input-element {
+  color: #000 !important;
+  font-size: 16px;
+}
+
+::ng-deep .mdc-floating-label {
+  color: #666 !important;
+  font-size: 14px;
+}
+
+::ng-deep input::placeholder {
+  color: #999 !important;
+  opacity: 1 !important;
+}
+
+/* Ошибки */
+.field-error {
+  color: #f44336;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* Кнопки */
+[mat-dialog-actions] {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+::ng-deep .mat-button,
+::ng-deep .mat-flat-button {
+  border-radius: 9999px;
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Кнопка "İmtina" */
+::ng-deep .mat-button {
+  color: #e91e63 !important;
+}
+
+/* Кнопка "Yadda saxla" */
+::ng-deep .mat-flat-button.mat-primary {
+  background-color: #ffb6e6 !important;
+  color: #4a0072 !important;
+}
+
+::ng-deep .mat-flat-button.mat-primary:hover {
+  background-color: #f48fb1 !important;
+}
+
+
+::ng-deep .mat-mdc-select-panel {
+  background-color: #ffffff !important;
+  color: #212121 !important;
+}
+
+::ng-deep .mat-mdc-option {
+  background-color: #ffffff !important;
+  color: #212121 !important;
+}
+
+::ng-deep .mat-mdc-option:hover {
+  background-color: #f2f2f2 !important;
+}
+
+
+::ng-deep input[type="date"] {
+  padding-top: 1.25rem !important; /* подвинуть текст вниз */
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+  align-items: flex-start !important; /* выравнивание текста внутри */
+}
+
+::ng-deep .mdc-floating-label {
+  transform: translateY(-1.5rem) scale(0.75) !important;
+  transform-origin: top left;
+  color: #999 !important;
+}
+

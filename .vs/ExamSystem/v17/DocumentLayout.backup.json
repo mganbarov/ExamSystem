@@ -3,96 +3,36 @@
   "WorkspaceRootPath": "D:\\projects\\Pet-Projects\\ExamSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\dtos\\lesson\\getlessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\dtos\\lesson\\getlessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\abstraction\\mapperprofiles\\lessonprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\abstraction\\mapperprofiles\\lessonprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\abstraction\\mapperprofiles\\examprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\abstraction\\mapperprofiles\\examprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\validators\\student\\updatestudentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\validators\\student\\updatestudentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\validators\\lesson\\updatelessonvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\validators\\lesson\\updatelessonvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\validators\\lesson\\createlessonvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\validators\\lesson\\createlessonvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\validators\\exam\\createexamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\validators\\exam\\createexamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\dtos\\exam\\createexamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\dtos\\exam\\createexamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|d:\\projects\\pet-projects\\examsystem\\src\\infrastructure\\examsystem.persistence\\implementations\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|solutionrelative:src\\infrastructure\\examsystem.persistence\\implementations\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\validators\\student\\createstudentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\validators\\student\\createstudentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|d:\\projects\\pet-projects\\examsystem\\src\\infrastructure\\examsystem.persistence\\implementations\\services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|solutionrelative:src\\infrastructure\\examsystem.persistence\\implementations\\services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\validators\\exam\\updateexamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\validators\\exam\\updateexamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|d:\\projects\\pet-projects\\examsystem\\src\\infrastructure\\examsystem.persistence\\implementations\\services\\examservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|solutionrelative:src\\infrastructure\\examsystem.persistence\\implementations\\services\\examservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|d:\\projects\\pet-projects\\examsystem\\src\\infrastructure\\examsystem.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|solutionrelative:src\\infrastructure\\examsystem.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|d:\\projects\\pet-projects\\examsystem\\src\\infrastructure\\examsystem.persistence\\migrations\\20250704022306_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|solutionrelative:src\\infrastructure\\examsystem.persistence\\migrations\\20250704022306_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|d:\\projects\\pet-projects\\examsystem\\src\\infrastructure\\examsystem.persistence\\configurations\\lessonconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{995DC554-A729-4600-9A7B-D7344321D18D}|src\\Infrastructure\\ExamSystem.Persistence\\ExamSystem.Persistence.csproj|solutionrelative:src\\infrastructure\\examsystem.persistence\\configurations\\lessonconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\dtos\\identity\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\dtos\\identity\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\dtos\\lesson\\createlessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\dtos\\lesson\\createlessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\abstraction\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\abstraction\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|d:\\projects\\pet-projects\\examsystem\\src\\core\\examsystem.application\\routes\\apiroutes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A8B52-FCDF-485E-98BA-DB6E1007B8C2}|src\\Core\\ExamSystem.Application\\ExamSystem.Application.csproj|solutionrelative:src\\core\\examsystem.application\\routes\\apiroutes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|d:\\projects\\pet-projects\\examsystem\\src\\api\\examsystem.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{980F482D-487F-4D73-81AE-AE2E399126F2}|src\\API\\ExamSystem.API\\ExamSystem.API.csproj|solutionrelative:src\\api\\examsystem.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,21 +42,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 151,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 15,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\Program.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Program.cs",
-              "RelativeToolTip": "src\\API\\ExamSystem.API\\Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAjwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T01:08:08.999Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -163,268 +90,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetLessonDto.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\DTOs\\Lesson\\GetLessonDto.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\DTOs\\Lesson\\GetLessonDto.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\DTOs\\Lesson\\GetLessonDto.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\DTOs\\Lesson\\GetLessonDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Abstraction\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Abstraction\\ServiceRegistration.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Abstraction\\ServiceRegistration.cs",
+              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Abstraction\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:01:28.743Z",
+              "WhenOpened": "2025-07-05T21:21:12.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LessonProfile.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Abstraction\\MapperProfiles\\LessonProfile.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Abstraction\\MapperProfiles\\LessonProfile.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Abstraction\\MapperProfiles\\LessonProfile.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Abstraction\\MapperProfiles\\LessonProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:00:55.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateStudentValidator.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Student\\UpdateStudentValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Validators\\Student\\UpdateStudentValidator.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Student\\UpdateStudentValidator.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Validators\\Student\\UpdateStudentValidator.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIA0wBIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:54:24.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\StudentService.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\StudentService.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\StudentService.cs",
-              "RelativeToolTip": "src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\StudentService.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAcwE8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:52:59.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateStudentValidator.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Student\\CreateStudentValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Validators\\Student\\CreateStudentValidator.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Student\\CreateStudentValidator.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Validators\\Student\\CreateStudentValidator.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:50:11.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateLessonValidator.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Lesson\\UpdateLessonValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Validators\\Lesson\\UpdateLessonValidator.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Lesson\\UpdateLessonValidator.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Validators\\Lesson\\UpdateLessonValidator.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAWwBIAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:48:43.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LessonService.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\LessonService.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\LessonService.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\LessonService.cs",
-              "RelativeToolTip": "src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\LessonService.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:47:19.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "CreateLessonValidator.cs",
               "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Lesson\\CreateLessonValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Validators\\Lesson\\CreateLessonValidator.cs",
               "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Lesson\\CreateLessonValidator.cs",
               "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Validators\\Lesson\\CreateLessonValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:46:48.249Z"
+              "WhenOpened": "2025-07-05T21:19:29.665Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UpdateExamValidator.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Exam\\UpdateExamValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Validators\\Exam\\UpdateExamValidator.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Exam\\UpdateExamValidator.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Validators\\Exam\\UpdateExamValidator.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:43:41.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ExamService.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\ExamService.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\ExamService.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\ExamService.cs",
-              "RelativeToolTip": "src\\Infrastructure\\ExamSystem.Persistence\\Implementations\\Services\\ExamService.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAYwG0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:42:22.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateExamValidator.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Exam\\CreateExamValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Validators\\Exam\\CreateExamValidator.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Validators\\Exam\\CreateExamValidator.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Validators\\Exam\\CreateExamValidator.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwBUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:40:58.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExamProfile.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Abstraction\\MapperProfiles\\ExamProfile.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Abstraction\\MapperProfiles\\ExamProfile.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Abstraction\\MapperProfiles\\ExamProfile.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Abstraction\\MapperProfiles\\ExamProfile.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:36:09.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\ExamSystem.Persistence\\ServiceRegistration.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\ServiceRegistration.cs",
-              "RelativeToolTip": "src\\Infrastructure\\ExamSystem.Persistence\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAWwBQAAACEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:24:23.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20250704022306_init.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Migrations\\20250704022306_init.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\ExamSystem.Persistence\\Migrations\\20250704022306_init.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Migrations\\20250704022306_init.cs",
-              "RelativeToolTip": "src\\Infrastructure\\ExamSystem.Persistence\\Migrations\\20250704022306_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:23:06.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "LessonConfiguration.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Configurations\\LessonConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\ExamSystem.Persistence\\Configurations\\LessonConfiguration.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Persistence\\Configurations\\LessonConfiguration.cs",
-              "RelativeToolTip": "src\\Infrastructure\\ExamSystem.Persistence\\Configurations\\LessonConfiguration.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAlwCAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:20:29.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\appsettings.json",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\appsettings.json",
-              "RelativeToolTip": "src\\API\\ExamSystem.API\\appsettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-04T02:15:58.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LessonController.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\LessonController.cs",
-              "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\Controllers\\LessonController.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\LessonController.cs",
-              "RelativeToolTip": "src\\API\\ExamSystem.API\\Controllers\\LessonController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAWwC0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:02:07.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\Controllers\\StudentController.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "src\\API\\ExamSystem.API\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T01:56:32.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ExamController.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\ExamController.cs",
-              "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\Controllers\\ExamController.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\ExamController.cs",
-              "RelativeToolTip": "src\\API\\ExamSystem.API\\Controllers\\ExamController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvyoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T01:47:45.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ApiRoutes.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Routes\\ApiRoutes.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\Routes\\ApiRoutes.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\Routes\\ApiRoutes.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\Routes\\ApiRoutes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T01:01:50.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "src\\API\\ExamSystem.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T00:58:58.771Z"
+              "WhenOpened": "2025-07-05T18:22:29.771Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "LoginRequestDto.cs",
-              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\DTOs\\Identity\\LoginRequestDto.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\DTOs\\Identity\\LoginRequestDto.cs",
-              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\DTOs\\Identity\\LoginRequestDto.cs",
-              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\DTOs\\Identity\\LoginRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAASAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CreateExamDto.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\DTOs\\Exam\\CreateExamDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\DTOs\\Exam\\CreateExamDto.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\DTOs\\Exam\\CreateExamDto.cs",
+              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\DTOs\\Exam\\CreateExamDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T00:57:58.529Z"
+              "WhenOpened": "2025-07-05T17:55:36.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\Program.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Program.cs",
+              "RelativeToolTip": "src\\API\\ExamSystem.API\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T17:45:35.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "src\\API\\ExamSystem.API\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAtwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T17:40:25.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateLessonDto.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\DTOs\\Lesson\\CreateLessonDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ExamSystem.Application\\DTOs\\Lesson\\CreateLessonDto.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Core\\ExamSystem.Application\\DTOs\\Lesson\\CreateLessonDto.cs",
+              "RelativeToolTip": "src\\Core\\ExamSystem.Application\\DTOs\\Lesson\\CreateLessonDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T17:39:22.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LessonController.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\LessonController.cs",
+              "RelativeDocumentMoniker": "src\\API\\ExamSystem.API\\Controllers\\LessonController.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\Controllers\\LessonController.cs",
+              "RelativeToolTip": "src\\API\\ExamSystem.API\\Controllers\\LessonController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIAwwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T16:25:44.686Z",
+              "EditorCaption": ""
             }
           ]
         }

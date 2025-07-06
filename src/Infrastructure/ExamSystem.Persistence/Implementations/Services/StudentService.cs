@@ -79,7 +79,7 @@ namespace ExamSystem.Persistence.Implementations.Services
             return dto;
         }
 
-        public async Task UpdateAsync(UpdateStudentDto dto)
+        public async Task<GetStudentDto> UpdateAsync(UpdateStudentDto dto)
         {
             var student = await _repo.GetByIdAsync(dto.Id, true)
                 ?? throw new NotFoundException("Şagird tapılmadı");
@@ -95,6 +95,10 @@ namespace ExamSystem.Persistence.Implementations.Services
             student.Grade = dto.Grade;
 
             await _repo.SaveChangesAsync();
+
+            return new GetStudentDto
+                (student.Id, student.FirstName, student.Surname, student.Grade, student.OrderNumber);
+              
         }
 
         public async Task<ICollection<GetStudentDto>> GetStudentsByGradeAsync(int grade)
