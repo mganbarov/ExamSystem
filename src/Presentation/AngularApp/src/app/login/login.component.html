@@ -5,16 +5,16 @@
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Username</mat-label>
       <input matInput name="username" [(ngModel)]="username" required #usernameRef="ngModel" />
-      <mat-error *ngIf="usernameRef.invalid && usernameRef.touched">Username is required</mat-error>
+      <mat-error *ngIf="usernameRef.invalid && usernameRef.touched">İstifadəçi adı boş ola bilməz!</mat-error>
     </mat-form-field>
 
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Password</mat-label>
       <input matInput type="password" name="password" [(ngModel)]="password" required #passwordRef="ngModel" />
-      <mat-error *ngIf="passwordRef.invalid && passwordRef.touched">Password is required</mat-error>
+      <mat-error *ngIf="passwordRef.invalid && passwordRef.touched">Şifrə boş ola bilməz!</mat-error>
     </mat-form-field>
 
-    <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">
+    <button mat-raised-button color="primary" type="submit">
       Login
     </button>
 

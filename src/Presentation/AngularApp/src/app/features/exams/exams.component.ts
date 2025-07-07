@@ -1,7 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DxDataGridModule } from 'devextreme-angular';
-import { HttpClient } from '@angular/common/http';
+import CustomStore from 'devextreme/data/custom_store';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ExamFormComponent } from './exams-form.component';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,128 +12,122 @@ import { ConfirmDialogComponent } from '../../shared/confirm-dialog/confirm-dial
 @Component({
   selector: 'app-exams',
   standalone: true,
-  imports: [CommonModule, DxDataGridModule, MatDialogModule, MatIconModule, MatButtonModule],
-  templateUrl:'./exams.component.html',
-  styleUrls:['./exams.component.css']
+  imports: [
+    CommonModule,
+    DxDataGridModule,
+    MatDialogModule,
+    MatIconModule,
+    MatButtonModule
+  ],
+  templateUrl: './exams.component.html',
+  styleUrls: ['./exams.component.css']
 })
-
-
 export class ExamsComponent implements OnInit {
-  exams: any[] = [];
+  dataSource: CustomStore;
   private dialog = inject(MatDialog);
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.loadExams();
+    this.initDataSource();
   }
 
-  loadExams(): void{
-    this.http.get<any[]>('https://localhost:7066/api/v1/exams').subscribe({
-      next: (data) => {
-        this.exams = data.map(item => ({
-          id: item.Id,
-          examDate: item.ExamDate,
-          examScore: item.ExamScore,
-          studentNumber: item.StudentNumber,
-          lessonCode: item.lessonCode
-        }));
-      },
-      error: (err) => {
-        console.log("Failed to load exams", err)
+  initDataSource(): void {
+    this.dataSource = new CustomStore({
+      key: 'Id',
+      load: (loadOptions) => {
+        const page = (loadOptions.skip! / loadOptions.take!) + 1;
+        const pageSize = loadOptions.take!;
+
+        const params = new HttpParams()
+          .set('page', page.toString())
+          .set('pageSize', pageSize.toString());
+
+        return this.http
+          .get<any>('https://localhost:7066/api/v1/exams', { params })
+          .toPromise()
+          .then((response) => ({
+            data: response.items,
+            totalCount: response.totalCount
+          }));
       }
-    })
+    });
   }
-
-  // openForm(exam: any): void {
-  //   const dialogRef = this.dialog.open(ExamFormComponent,{
-  //     width: '600px',
-  //     maxHeight: '90vh',
-  //     disableClose: true,
-  //     data: exam
-  //   });
-
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     if(result === true){
-  //       this.loadExams();
-  //     }
-  //   })
-
-  // }
-
 
   openForm(exam: any): void {
-  // Загружаем данные студентов и уроков параллельно
-  const studentsRequest = this.http.get<any[]>('https://localhost:7066/api/v1/students');
-  const lessonsRequest = this.http.get<any[]>('https://localhost:7066/api/v1/lessons');
+    const studentsRequest = this.http.get<any[]>('https://localhost:7066/api/v1/students');
+    const lessonsRequest = this.http.get<any[]>('https://localhost:7066/api/v1/lessons');
 
-  studentsRequest.subscribe(students => {
-    lessonsRequest.subscribe(lessons => {
-      // Открываем диалог только после того, как данные загружены
-      const dialogRef = this.dialog.open(ExamFormComponent, {
-        width: '600px',
-        maxHeight: '90vh',
-        disableClose: true,
-        data: {
-          ...exam,
-          students,
-          lessons
-        }
-      });
+    studentsRequest.subscribe((students) => {
+      lessonsRequest.subscribe((lessons) => {
+        const dialogRef = this.dialog.open(ExamFormComponent, {
+          width: '600px',
+          maxHeight: '90vh',
+          disableClose: true,
+          data: {
+            ...exam,
+            students,
+            lessons
+          }
+        });
 
-      dialogRef.afterClosed().subscribe(result => {
-        if (result === true) {
-          this.loadExams();
-        }
+        dialogRef.afterClosed().subscribe((result) => {
+          if (result === true) {
+            this.reloadDataSource();
+          }
+        });
       });
     });
-  });
-}
-
-
-  editExams(e: any) : void{
-    const exam = e.row.data;
-    this.openForm(exam);
   }
 
-  createExam(): void{
+  reloadDataSource(): void {
+    if (this.dataSource) {
+      (this.dataSource as any).load();
+    }
+  }
+
+  createExam(): void {
     this.openForm({
       examDate: new Date().toISOString(),
       examScore: 0,
       studentNumber: 1,
       lessonCode: ''
-    })
+    });
   }
 
-  deleteExam(id: number): void{
-    const dialogRef = this.dialog.open(ConfirmDialogComponent,{
-      width:'400px',
-      data:{
+  editExams(e: any): void {
+    const exam = e.row.data;
+    this.openForm(exam);
+  }
+
+  deleteExam(id: number): void {
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      width: '400px',
+      data: {
         title: 'Təsdiq et',
         message: 'Silmək istədiyinizə əminsiz?'
       }
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      if(result){
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result) {
         this.http.delete(`https://localhost:7066/api/v1/exams/${id}`).subscribe({
-          next: () => this.loadExams(),
-          error: err => console.error('Failed to delete exam', err)
+          next: () => this.reloadDataSource(),
+          error: (err) => console.error('Failed to delete exam', err)
         });
       }
     });
   }
 
-  onDeleteClick(e: any): void{
-    const id = e?.row?.data?.id;
-    if(id){
+  onDeleteClick = (e: any): void => {
+    const id = e?.row?.data?.Id;
+    if (id) {
       this.deleteExam(id);
-    } else{
+    } else {
       console.error('Exam not found');
     }
-  }
+  };
 
   handleEditExamButtonClick = (e: any) => this.editExams(e);
   handleDeleteExamButtonClick = (e: any) => this.onDeleteClick(e);
-
 }

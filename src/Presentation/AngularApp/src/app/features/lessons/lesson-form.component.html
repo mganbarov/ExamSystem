@@ -20,7 +20,7 @@
   </div>
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Dərsin adı</mat-label>
-    <input matInput [(ngModel)]="lesson.name" name="name" />
+    <input matInput [(ngModel)]="lesson.name" name="name" (keypress)="allowLettersOnly($event)"/>
   </mat-form-field>
 
   <div *ngIf="lesson.validationErrors?.['Grade']">
@@ -29,11 +29,13 @@
     </div>
   </div>
 
-  <!-- <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Sinif</mat-label>
-    <input matInput type="number" [(ngModel)]="lesson.grade" name="grade" />
-  </mat-form-field> -->
-
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Sinf</mat-label>
+    <input matInput type="number" [(ngModel)]="lesson.grade" min="1" max="11" (keydown)="preventInvalidKeys($event)"
+  (wheel)="disableScroll($event)"
+  (paste)="preventPasteNegative($event)"/>
+  </mat-form-field>
+  
   <div *ngIf="lesson.validationErrors?.['TeacherFirstName']">
     <div *ngFor="let error of lesson.validationErrors?.['TeacherFirstName']" class="field-error">
       {{ error }}
@@ -42,19 +44,24 @@
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Müəllimin adı</mat-label>
-    <input matInput [(ngModel)]="lesson.teacherFirstName" name="teacherFirstName" />
+    <input matInput [(ngModel)]="lesson.teacherFirstName" name="teacherFirstName" (keypress)="allowLettersOnly($event)"/>
   </mat-form-field>
 
   <div *ngIf="lesson.validationErrors?.['TeacherSurname']">
-    <div *ngFor="let error of lesson.validationErrors?.['TeacherSurname']" class="field-error">
+    <div *ngFor="let error of lesson.validationErrors?.['TeacherSurname']" class="field-error" >
       {{ error }}
     </div>
   </div>
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Müəllimin soyadı</mat-label>
-    <input matInput [(ngModel)]="lesson.teacherSurname" name="teacherSurname" />
+    <input matInput [(ngModel)]="lesson.teacherSurname" name="teacherSurname" (keypress)="allowLettersOnly($event)"/>
   </mat-form-field>
 
+  <div *ngIf="lesson.validationErrors?.['General']" class="field-error">
+    <div *ngFor="let error of lesson.validationErrors['General']">
+      {{ error }}
+    </div>
+  </div>
 </div>
 
 <div mat-dialog-actions align="end">

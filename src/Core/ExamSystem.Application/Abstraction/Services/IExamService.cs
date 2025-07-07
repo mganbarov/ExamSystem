@@ -9,7 +9,8 @@ namespace ExamSystem.Application.Abstraction.Services
 {
     public interface IExamService
     {
-        Task<ICollection<GetExamDTO>> GetAllAsync(int page, int take);
+        public Task<(List<GetExamDTO> items, int totalCount)> GetAllAsync(int page, int take);
+
         Task<GetExamDTO> GetByIdAsync(int id);
         Task CreateAsync(CreateExamDTO dto);
         Task UpdateAsync(UpdateExamDTO dto);

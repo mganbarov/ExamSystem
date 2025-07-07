@@ -1,41 +1,36 @@
-<div class="table-container">
-  <div class="toolbar">
-    <button class="add-exam" (click)="createExam()">Əlavə et</button>
-  </div>
 
-  <dx-data-grid
-  [dataSource]="exams"
+<div class="toolbar">
+  <button class="add-exam" (click)="createExam()">Əlavə et</button>
+</div>
+
+
+<dx-data-grid
+  [dataSource]="dataSource"
   [showBorders]="true"
   [columnAutoWidth]="true"
-  [rowAlternationEnabled]="false">
-    <dxo-paging [pageSize]="5"></dxo-paging>  
-    <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+  [rowAlternationEnabled]="false"
+  [remoteOperations]="true">
 
-    <dxi-column dataField="lessonCode" caption="Dərsin kodu"></dxi-column>
-    <dxi-column dataField="orderNumber" caption="Sinif nömrəsi"></dxi-column>
-    <dxi-column dataField="ExamDate" caption="İmtahan tarixi"></dxi-column>
-    <dxi-column dataField="ExamScore" caption="Şagirdin qiyməti"></dxi-column>
-      
-    <dxi-column type="buttons" caption="Əməliyyatlar">
-      <dxi-button
-      icon="edit"
-      hint="Redaktə et"
-      [onClick]="handleEditExamButtonClick">
-
-      </dxi-button>
-
-      <dxi-button
-      icon="trash"
-      hint="Sil"
-      [onClick]="handleDeleteExamButtonClick"></dxi-button>
-
-
-    </dxi-column>
   
-  
-  
-  </dx-data-grid>
+  <dxo-paging [pageSize]="5"></dxo-paging>
+  <dxo-pager 
+    [showPageSizeSelector]="true" 
+    [showInfo]="true" 
+    [visible]="true">
+  </dxo-pager>
 
 
+  <dxi-column dataField="StudentNumber" caption="Şagirdin nömrəsi"></dxi-column>
+  <dxi-column dataField="StudentName" caption="Şagirdin adı"></dxi-column>
+  <dxi-column dataField="StudentSurname" caption="Şagirdin soyadı"></dxi-column>
+  <dxi-column dataField="LessonCode" caption="Dərsin kodu"></dxi-column>
+  <dxi-column dataField="LessonName" caption="Dərsin adı"></dxi-column>
+  <dxi-column dataField="ExamDate" caption="İmtahan tarixi" dataType="date" format="dd/MM/yyyy"></dxi-column>
+  <dxi-column dataField="ExamScore" caption="Şagirdin qiyməti"></dxi-column>
 
-</div>
+ 
+  <dxi-column type="buttons" caption="Əməliyyatlar">
+    <dxi-button icon="edit" hint="Redaktə et" [onClick]="handleEditExamButtonClick"></dxi-button>
+    <dxi-button icon="trash" hint="Sil" [onClick]="handleDeleteExamButtonClick"></dxi-button>
+  </dxi-column>
+</dx-data-grid>

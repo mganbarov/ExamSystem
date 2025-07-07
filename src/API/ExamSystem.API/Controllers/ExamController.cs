@@ -18,10 +18,20 @@ namespace ExamSystem.API.Controllers
             _examService = examService;
         }
 
+        
+        //public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        //=> Ok(await _examService.GetAllAsync(page, pageSize));
         [HttpGet(ApiRoutes.Exam.GetAll)]
         public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
-        => Ok(await _examService.GetAllAsync(page, pageSize));
+        {
+            var (items, totalCount) = await _examService.GetAllAsync(page, pageSize);
 
+            return Ok(new
+            {
+                items,
+                totalCount
+            });
+        }
         [HttpGet(ApiRoutes.Exam.GetById)]
         public async Task<IActionResult> Get(int id) => Ok(await _examService.GetByIdAsync(id));
 
@@ -33,7 +43,7 @@ namespace ExamSystem.API.Controllers
             return StatusCode(StatusCodes.Status201Created);
         }
 
-        [HttpPut]
+        [HttpPut(ApiRoutes.Exam.Update)]
         [Authorize]
         public async Task<IActionResult> Update(UpdateExamDTO dto)
         {

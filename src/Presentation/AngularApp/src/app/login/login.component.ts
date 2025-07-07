@@ -3,8 +3,6 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
-
-// Angular Material
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -40,13 +38,13 @@ export class LoginComponent {
 
     this.authService.login({ username: this.username, password: this.password }).subscribe({
       next: (token: string) => {
-        // сохранить токен
+        
         this.authService.saveToken(token);
 
-        // уведомление
+        
         this.snackBar.open('Login successful', 'Close', { duration: 3000 });
 
-        // переход на dashboard
+        
         this.router.navigate(['/dashboard']);
       },
       error: (err) => {

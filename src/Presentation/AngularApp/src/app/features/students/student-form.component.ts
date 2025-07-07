@@ -74,4 +74,34 @@ export class StudentFormComponent {
   cancel() {
     this.dialogRef.close(null);
   }
+
+  preventInvalidKeys(event: KeyboardEvent): void {
+  const invalidKeys = ['-', 'e', 'E', '+'];
+  if (invalidKeys.includes(event.key)) {
+    event.preventDefault();
+  }
+}
+
+disableScroll(event: WheelEvent): void {
+  (event.target as HTMLInputElement).blur(); 
+}
+
+preventPasteNegative(event: ClipboardEvent): void {
+  const pasted = event.clipboardData?.getData('text');
+  if (pasted && /^-/.test(pasted)) {
+    event.preventDefault();
+  }
+}
+
+allowLettersOnly(event: KeyboardEvent): void {
+  const char = event.key;
+
+  
+  if (!/^[\p{L} ]$/u.test(char)) {
+    event.preventDefault();
+  }
+}
+
+
+
 }

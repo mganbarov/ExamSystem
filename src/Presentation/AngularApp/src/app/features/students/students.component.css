@@ -23,9 +23,9 @@
 }
 .toolbar {
   display: flex;
-  justify-content: flex-start; /* Слева */
+  justify-content: flex-start; 
   margin-bottom: 16px;
-  background: none; /* Убираем тёмный фон */
+  background: none; 
 }
 
 .add-button {

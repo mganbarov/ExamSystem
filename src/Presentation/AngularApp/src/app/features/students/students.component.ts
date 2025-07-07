@@ -42,6 +42,25 @@ export class StudentsComponent implements OnInit {
     });
   }
 
+  preventInvalidKeys(event: KeyboardEvent): void {
+  const invalidKeys = ['-', 'e', 'E', '+'];
+  if (invalidKeys.includes(event.key)) {
+    event.preventDefault();
+  }
+}
+
+disableScroll(event: WheelEvent): void {
+  (event.target as HTMLInputElement).blur();
+}
+
+preventPasteNegative(event: ClipboardEvent): void {
+  const pasted = event.clipboardData?.getData('text');
+  if (pasted && /^-/.test(pasted)) {
+    event.preventDefault();
+  }
+}
+
+
   editStudent(e: any): void {
     const student = e.row.data;
     this.openForm(student);
@@ -90,6 +109,7 @@ export class StudentsComponent implements OnInit {
     });
   }
 
+ 
   onDeleteClick(e: any): void {
     const id = e?.row?.data?.id;
     if (id) {

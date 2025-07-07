@@ -10,7 +10,7 @@
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Adı</mat-label>
-    <input matInput [(ngModel)]="student.firstName" />
+    <input matInput [(ngModel)]="student.firstName" (keypress)="allowLettersOnly($event)"/>
   </mat-form-field>
 
   <div *ngIf="student.validationErrors?.['Surname']">
@@ -21,7 +21,7 @@
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Soyadı</mat-label>
-    <input matInput [(ngModel)]="student.surname" />
+    <input matInput [(ngModel)]="student.surname" (keypress)="allowLettersOnly($event)" />
   </mat-form-field>
 
   <div *ngIf="student.validationErrors?.['Grade']">
@@ -32,7 +32,9 @@
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Sinf</mat-label>
-    <input matInput type="number" [(ngModel)]="student.grade" />
+    <input matInput type="number" [(ngModel)]="student.grade" min="1" max="11" (keydown)="preventInvalidKeys($event)"
+  (wheel)="disableScroll($event)"
+  (paste)="preventPasteNegative($event)"/>
   </mat-form-field>
 
   <div *ngIf="student.validationErrors?.['OrderNumber']">
@@ -43,7 +45,9 @@
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Nömrə</mat-label>
-    <input matInput type="number" [(ngModel)]="student.orderNumber" />
+    <input matInput type="number" [(ngModel)]="student.orderNumber" min="1" (keydown)="preventInvalidKeys($event)"
+  (wheel)="disableScroll($event)"
+  (paste)="preventPasteNegative($event)"/>
   </mat-form-field>
 </div>
 

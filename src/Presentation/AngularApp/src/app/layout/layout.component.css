@@ -43,7 +43,7 @@ mat-nav-list a.mat-list-item.active-link {
 
 .page-content {
   padding: 24px;
-  min-height: calc(100vh - 64px); /* учитываем toolbar */
+  min-height: calc(100vh - 64px); 
   background-color: #ffffff;
   border-radius: 8px;
   margin: 16px;

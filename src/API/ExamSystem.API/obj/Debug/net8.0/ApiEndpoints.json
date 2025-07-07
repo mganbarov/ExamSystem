@@ -1,21 +1,5 @@
 [
   {
-    "ContainingType": "ExamSystem.API.Controllers.ExamController",
-    "Method": "Update",
-    "RelativePath": "api/v1",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "ExamSystem.Application.UpdateExamDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "ExamSystem.API.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/v1/auth/login",
@@ -63,6 +47,22 @@
       {
         "Name": "dto",
         "Type": "ExamSystem.Application.DTOs.Exam.CreateExamDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ExamSystem.API.Controllers.ExamController",
+    "Method": "Update",
+    "RelativePath": "api/v1/exams",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ExamSystem.Application.UpdateExamDTO",
         "IsRequired": true
       }
     ],

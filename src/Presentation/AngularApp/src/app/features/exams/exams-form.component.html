@@ -1,206 +1,83 @@
-<!-- <!-- <h2 mat-dialog-title>{{ exam.id ? 'İmtahanı redaktə et' : 'Yeni imtahan əlavə et' }}</h2>
-
-
-<div mat-dialog-content>
-  <div *ngIf="exam.validationErrors?.['ExamDate']">
-    <div *ngFor="let error of exam.validationErrors?.['ExamDate']" class="field-validation">
-      {{error}}
-    </div>
-  </div>
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Tarix</mat-label>
-    <input matInput type="date" [(ngModel)]="exam.examDate" name="examDate" />
-  </mat-form-field>
- 
-  <div *ngIf="exam.validationErrors?.['ExamScore']">
-    <div *ngFor="let error of exam.validationErrors?.['ExamScore']" class="field-validation">
-      {{error}}
-    </div>
-  </div>
-  
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Bal</mat-label>
-    <input matInput type="number" [(ngModel)]="exam.examScore" name="examScore" />
-  </mat-form-field>
-  
-  <div *ngIf="exam.validationErrors?.['StudentNumber']">
-    <div *ngFor="let error of exam.validationErrors?.['StudentNumber']" class="field-error">
-      {{error}}
-    </div>
-  </div>
-
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Şagird nömrəsi</mat-label>
-    <input matInput type="number" [(ngModel)]="exam.studentNumber" name="studentNumber" />
-  </mat-form-field>
-
-  <div *ngIf="exam.validationErrors?.['LessonCode']">
-    <div *ngFor="let error of exam.validationErrors?.['LessonCode']" class="field-error">
-      {{error}}
-    </div>
-  </div>
-
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Dərs kodu</mat-label>
-    <input matInput [(ngModel)]="exam.lessonCode" name="lessonCode" />
-  </mat-form-field>
-  
-</div>
-
-<div mat-dialog-actions align="end">
-  <button mat-button (click)="cancel()">İmtina</button>
-  <button mat-flat-button color="primary" (click)="save()">Yadda saxla</button>
-</div> -->
-
-
-<!-- <h2 mat-dialog-title>{{ exam.id ? 'İmtahanı redaktə et' : 'Yeni imtahan əlavə et' }}</h2>
-
-
-<div mat-dialog-content>
-  <div *ngIf="exam.validationErrors?.['ExamDate']">
-    <div *ngFor="let error of exam.validationErrors?.['ExamDate']" class="field-validation">
-      {{error}}
-    </div>
-  </div>
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Tarix</mat-label>
-    <input matInput type="date" [(ngModel)]="exam.examDate" name="examDate" />
-  </mat-form-field>
- 
-  <div *ngIf="exam.validationErrors?.['ExamScore']">
-    <div *ngFor="let error of exam.validationErrors?.['ExamScore']" class="field-validation">
-      {{error}}
-    </div>
-  </div>
-  
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Bal</mat-label>
-    <input matInput type="number" [(ngModel)]="exam.examScore" name="examScore" />
-  </mat-form-field>
-  
-  <div *ngIf="exam.validationErrors?.['StudentNumber']">
-    <div *ngFor="let error of exam.validationErrors?.['StudentNumber']" class="field-error">
-      {{error}}
-    </div>
-  </div>
-<dx-drop-down-box
-  [(value)]="exam.studentNumber"
-  [dataSource]="students"
-  valueExpr="orderNumber"
-  displayExpr="orderNumber"
-  placeholder="Şagird nömrəsi"
-  [showClearButton]="true"
-  [acceptCustomValue]="false"
-  dropDownContentTemplate="studentTemplate">
-  
-  <ng-template #studentTemplate>
-    <dx-list
-      [items]="students"
-      selectionMode="single"
-      [selectedItems]="[exam.studentNumber]"
-      displayExpr="orderNumber"
-      (onItemClick)="onStudentSelected($event)">
-    </dx-list>
-  </ng-template>
-</dx-drop-down-box>
-
-
-
-  <div *ngIf="exam.validationErrors?.['LessonCode']">
-    <div *ngFor="let error of exam.validationErrors?.['LessonCode']" class="field-error">
-      {{error}}
-    </div>
-  </div>
-
-<dx-drop-down-box
-  class="full-width"
-  [(value)]="exam.lessonCode"
-  [dataSource]="lessons"
-  displayExpr="Code"
-  valueExpr="Code"
-  placeholder="Dərs kodu"
-  dropDownContentTemplate="lessonTemplate">
-
-  <ng-template #lessonTemplate>
-    <dx-list
-      [items]="lessons"
-      displayExpr="Code"
-      selectionMode="single"
-      (onItemClick)="
-        exam.lessonCode = $event.itemData.Code;
-        $event.component.option('opened', false)">
-    </dx-list>
-  </ng-template>
-</dx-drop-down-box>
- -->
-
-
-
-  
-
-<!-- <div mat-dialog-actions align="end">
-  <button mat-button (click)="cancel()">İmtina</button>
-  <button mat-flat-button color="primary" (click)="save()">Yadda saxla</button>
-</div> -->
 
 <h2 mat-dialog-title>
   {{ exam.id ? 'İmtahanı redaktə et' : 'Yeni imtahan əlavə et' }}
 </h2>
 
-<div mat-dialog-content>
-  
-  <div *ngIf="exam.validationErrors?.['ExamDate']">
-    <div *ngFor="let error of exam.validationErrors?.['ExamDate']" class="field-error">
-      {{ error }}
-    </div>
-  </div>
+<mat-dialog-content>
+
+
   <mat-form-field appearance="outline" class="full-width" floatLabel="always">
     <mat-label>Tarix</mat-label>
-    <input matInput type="date" [(ngModel)]="exam.examDate" name="examDate" />
+    <input
+      matInput
+      type="date"
+      [(ngModel)]="exam.examDate"
+      name="examDate"
+      [min]="'1900-01-01'"
+      [max]="'2099-12-31'" />
   </mat-form-field>
-
-
-
-  <div *ngIf="exam.validationErrors?.['ExamScore']">
-    <div *ngFor="let error of exam.validationErrors?.['ExamScore']" class="field-error">
-      {{ error }}
+  <div class="field-error" *ngIf="exam.validationErrors?.['ExamDate']">
+    <div *ngFor="let err of exam.validationErrors['ExamDate']">
+      {{ err }}
     </div>
   </div>
-  <mat-form-field appearance="outline" class="full-width">
+
+  <mat-form-field appearance="outline" class="full-width" floatLabel="always">
     <mat-label>Bal</mat-label>
-    <input matInput type="number" [(ngModel)]="exam.examScore" name="examScore" />
+    <input
+      matInput
+      type="number"
+      [(ngModel)]="exam.examScore"
+      name="examScore"
+      min="0"
+      max="700"
+      (keydown)="preventInvalidKeys($event)"
+      (input)="validateScore($event)" />
   </mat-form-field>
-
-  <div *ngIf="exam.validationErrors?.['StudentNumber']">
-    <div *ngFor="let error of exam.validationErrors?.['StudentNumber']" class="field-error">
-      {{ error }}
+  <div class="field-error" *ngIf="exam.validationErrors?.['ExamScore']">
+    <div *ngFor="let err of exam.validationErrors['ExamScore']">
+      {{ err }}
     </div>
   </div>
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Şagird nömrəsi</mat-label>
-    <mat-select [(ngModel)]="exam.studentNumber" name="studentNumber">
-      <mat-option *ngFor="let student of students" [value]="student.OrderNumber">
-        {{ student.OrderNumber }} - {{ student.FirstName }} {{ student.Surname }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
 
-  <div *ngIf="exam.validationErrors?.['LessonCode']">
-    <div *ngFor="let error of exam.validationErrors?.['LessonCode']" class="field-error">
-      {{ error }}
+
+  <div class="full-width">
+    <dx-select-box
+      [items]="students"
+      displayExpr="OrderNumber"
+      valueExpr="OrderNumber"
+      [(value)]="exam.studentNumber"
+      placeholder="Şagird nömrəsi seçin"
+      [searchEnabled]="true">
+    </dx-select-box>
+    <div class="field-error" *ngIf="exam.validationErrors?.['StudentNumber']">
+      {{ exam.validationErrors['StudentNumber'][0] }}
     </div>
   </div>
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Dərs kodu</mat-label>
-    <mat-select [(ngModel)]="exam.lessonCode" name="lessonCode">
-      <mat-option *ngFor="let lesson of lessons" [value]="lesson.Code">
-        {{ lesson.Code }} - {{ lesson.Name }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
 
-<div mat-dialog-actions align="end">
+
+  <div class="full-width">
+    <dx-select-box
+      [items]="lessons"
+      displayExpr="Code"
+      valueExpr="Code"
+      [(value)]="exam.lessonCode"
+      placeholder="Dərs kodu seçin"
+      [searchEnabled]="true">
+    </dx-select-box>
+    <div class="field-error" *ngIf="exam.validationErrors?.['LessonCode']">
+      {{ exam.validationErrors['LessonCode'][0] }}
+    </div>
+  </div>
+
+
+  <div *ngIf="exam.validationErrors?.['General']" class="field-error">
+    {{ exam.validationErrors['General'][0] }}
+  </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
   <button mat-button (click)="cancel()">İmtina</button>
   <button mat-flat-button color="primary" (click)="save()">Yadda saxla</button>
-</div>
+</mat-dialog-actions>

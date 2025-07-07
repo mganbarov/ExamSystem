@@ -46,12 +46,9 @@ namespace ExamSystem.Persistence.Implementations.Services
             if (dto.ExamDate > DateTime.Today)
                 throw new ValidationException("İmtahan tarixi gələcəkdə ola bilməz");
 
-            if (dto.ExamScore < 0 || dto.ExamScore > 9)
-                throw new ValidationException("Qiymət 0-9 aralığında olmalıdır");
-
             var exam = new Exam
             {
-                ExamDate = dto.ExamDate,
+                ExamDate = dto.ExamDate.Value,
                 ExamScore = dto.ExamScore,
                 StudentId = student.Id,
                 LessonId = lesson.Id,
@@ -69,12 +66,28 @@ namespace ExamSystem.Persistence.Implementations.Services
             await _repo.SaveChangesAsync();
         }
 
-        public async Task<ICollection<GetExamDTO>> GetAllAsync(int page, int take)
+        public async Task<(List<GetExamDTO> items, int totalCount)> GetAllAsync(int page, int take)
         {
             int skip = (page - 1) * take;
-            ICollection<Exam> exams = await _repo.GetAll(skip, take, false, true, includes: new[] { nameof(Student), nameof(Lesson) }).ToListAsync();
-            ICollection<GetExamDTO> dtos = _mapper.Map<ICollection<GetExamDTO>>(exams);
-            return dtos;
+
+            var query = _repo.GetAll(0, int.MaxValue, false, true, includes: new[] { nameof(Student), nameof(Lesson) });
+            var totalCount = await query.CountAsync();
+
+            var pagedQuery = query.Skip(skip).Take(take);
+
+            var items = await pagedQuery
+                .Select(exam => new GetExamDTO(
+                    exam.Id,
+                    exam.ExamDate,
+                    exam.Lesson.Name,
+                    exam.Student.FirstName,
+                    exam.Student.Surname,
+                    exam.ExamScore,
+                    exam.Student.OrderNumber,
+                    exam.Lesson.Code
+                )).ToListAsync();
+
+            return (items, totalCount);
 
         }
 
