@@ -1,0 +1,26 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+## Build results
+bin/
+obj/
+out/
+
+## Debugging
+*.pdb
+*.cache
+*.log
+
+## Temporary
+*.tmp
+*.temp
+
+## ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+## Visual Studio Code
+.vscode/
