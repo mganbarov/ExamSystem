@@ -5,7 +5,11 @@
 
 <mat-dialog-content>
 
-
+  <div class="field-error" *ngIf="exam.validationErrors?.['ExamDate']">
+    <div *ngFor="let err of exam.validationErrors['ExamDate']">
+      {{ err }}
+    </div>
+  </div>
   <mat-form-field appearance="outline" class="full-width" floatLabel="always">
     <mat-label>Tarix</mat-label>
     <input
@@ -16,12 +20,12 @@
       [min]="'1900-01-01'"
       [max]="'2099-12-31'" />
   </mat-form-field>
-  <div class="field-error" *ngIf="exam.validationErrors?.['ExamDate']">
-    <div *ngFor="let err of exam.validationErrors['ExamDate']">
+
+  <div class="field-error" *ngIf="exam.validationErrors?.['ExamScore']">
+    <div *ngFor="let err of exam.validationErrors['ExamScore']">
       {{ err }}
     </div>
   </div>
-
   <mat-form-field appearance="outline" class="full-width" floatLabel="always">
     <mat-label>Bal</mat-label>
     <input
@@ -34,43 +38,36 @@
       (keydown)="preventInvalidKeys($event)"
       (input)="validateScore($event)" />
   </mat-form-field>
-  <div class="field-error" *ngIf="exam.validationErrors?.['ExamScore']">
-    <div *ngFor="let err of exam.validationErrors['ExamScore']">
-      {{ err }}
-    </div>
-  </div>
 
+<div class="field-error" *ngIf="exam.validationErrors?.['StudentNumber']">
+  {{ exam.validationErrors['StudentNumber'][0] }}
+</div>
+<label class="custom-label">Şagird nömrəsi</label>
+<dx-select-box
+  class="full-width"
+  [items]="students"
+  displayExpr="OrderNumber"
+  valueExpr="OrderNumber"
+  [(value)]="exam.studentNumber"
+  [searchEnabled]="true"
+  [showClearButton]="true">
+</dx-select-box>
 
-  <div class="full-width">
-    <dx-select-box
-      [items]="students"
-      displayExpr="OrderNumber"
-      valueExpr="OrderNumber"
-      [(value)]="exam.studentNumber"
-      placeholder="Şagird nömrəsi seçin"
-      [searchEnabled]="true">
-    </dx-select-box>
-    <div class="field-error" *ngIf="exam.validationErrors?.['StudentNumber']">
-      {{ exam.validationErrors['StudentNumber'][0] }}
-    </div>
-  </div>
+<div class="field-error" *ngIf="exam.validationErrors?.['LessonCode']">
+  {{ exam.validationErrors['LessonCode'][0] }}
+</div>
+<label class="custom-label">Dərs kodu</label>
+<dx-select-box
+  class="full-width"
+  [items]="lessons"
+  displayExpr="Code"
+  valueExpr="Code"
+  [(value)]="exam.lessonCode"
+  [searchEnabled]="true"
+  [showClearButton]="true">
+</dx-select-box>
 
-
-  <div class="full-width">
-    <dx-select-box
-      [items]="lessons"
-      displayExpr="Code"
-      valueExpr="Code"
-      [(value)]="exam.lessonCode"
-      placeholder="Dərs kodu seçin"
-      [searchEnabled]="true">
-    </dx-select-box>
-    <div class="field-error" *ngIf="exam.validationErrors?.['LessonCode']">
-      {{ exam.validationErrors['LessonCode'][0] }}
-    </div>
-  </div>
-
-
+ 
   <div *ngIf="exam.validationErrors?.['General']" class="field-error">
     {{ exam.validationErrors['General'][0] }}
   </div>

@@ -154,3 +154,17 @@ input.ng-invalid {
   border: 1px solid #e53935 !important;
   box-shadow: 0 0 0 1px #e53935 !important;
 }
+
+
+.custom-label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 10px 0 4px;
+  color: #333;
+}
+.field-error {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-bottom: 4px;
+}

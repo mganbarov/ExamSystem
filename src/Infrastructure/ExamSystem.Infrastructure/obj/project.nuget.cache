@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bF68BTD27Jo=",
+  "dgSpecHash": "fONo5iIfju8=",
   "success": true,
-  "projectFilePath": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\Infrastructure\\ExamSystem.Infrastructure\\ExamSystem.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\mganb\\Desktop\\ExamSystem\\src\\Infrastructure\\ExamSystem.Infrastructure\\ExamSystem.Infrastructure.csproj",
   "expectedPackageFiles": [
     "D:\\NuGet\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "D:\\NuGet\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

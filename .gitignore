@@ -23,4 +23,4 @@ _ReSharper*/
 *.DotSettings.user
 
 ## Visual Studio Code
-.vscode/
+.vscode/".vs/" 

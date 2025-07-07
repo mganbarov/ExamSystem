@@ -29,7 +29,7 @@ namespace ExamSystem.Application.Validators.Exam
 
             RuleFor(x => x.ExamScore)
                 .NotEmpty()
-                .WithMessage("Boş ola bilməz");
+                .WithMessage("İmtahan balı boş ola bilməz");
         }
 
     }

@@ -114,9 +114,6 @@ namespace ExamSystem.Persistence.Implementations.Services
             if (dto.ExamDate > DateTime.Today)
                 throw new ValidationException("İmtahan tarixi gələcəkdə ola bilməz");
 
-            if (dto.ExamScore < 0 || dto.ExamScore > 9)
-                throw new ValidationException("Qiymət 0-9 aralığında olmalıdır");
-
             if (student.Grade != lesson.Grade)
                 throw new ValidationException("Şagirdin sinifi dərsin sinifi ilə uyğun deyil");
 

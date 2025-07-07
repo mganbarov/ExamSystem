@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "43FZsq8sZ8c=",
+  "dgSpecHash": "f81b/8qaHAI=",
   "success": true,
-  "projectFilePath": "D:\\projects\\Pet-Projects\\ExamSystem\\src\\API\\ExamSystem.API\\ExamSystem.API.csproj",
+  "projectFilePath": "C:\\Users\\mganb\\Desktop\\ExamSystem\\src\\API\\ExamSystem.API\\ExamSystem.API.csproj",
   "expectedPackageFiles": [
     "D:\\NuGet\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "D:\\NuGet\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

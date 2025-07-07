@@ -29,8 +29,8 @@ namespace ExamSystem.Application.Validators.Exam
                 .WithMessage("İmtahan tarixi gələcəkdə ola bilməz");
 
             RuleFor(x => x.ExamScore)
-                .InclusiveBetween(0, 9)
-                .WithMessage("Qiymət 0-9 aralığında olmalıdır");
+              .NotEmpty()
+              .WithMessage("Imtahant balı boş ola bilməz");
 
         }
 
