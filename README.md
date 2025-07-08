@@ -5,7 +5,7 @@
 ## 🔧 Technologies Used
 
 - **Backend**: ASP.NET Core 8 Web API  
-- **Frontend**: Angular 17 + DevExtreme  
+- **Frontend**: Angular 20 + DevExtreme  
 - **Database**: Microsoft SQL Server  
 - **Authentication**: JWT (Single Admin)
 
